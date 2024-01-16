@@ -1,12 +1,7 @@
-import React from "react";
+import { ReactNode } from "react";
 
-const AfterLayout = ({ children }: React.ReactNode) => {
-  return (
-    <div>
-      After Login Layout
-      {children}
-    </div>
-  );
+const AfterLayout = ({ children }: { children: ReactNode }) => {
+  return <div>{children}</div>;
 };
 
 export default AfterLayout;
